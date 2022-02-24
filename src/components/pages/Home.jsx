@@ -32,6 +32,8 @@ const Home = (props) => {
         
         if(body.isArrayEmpty(postContext.posts) === true){
             await postContext.getPosts({ perPage: 25 });
+            await postContext.getTopPosts({ perPage: 25, top: 2 });
+            await postContext.getRisingPosts({ perPage: 25 });
 
         }
 
@@ -127,6 +129,136 @@ const Home = (props) => {
                                             
                                                 {
                                                     postContext.posts.map((post, i) => 
+                                                    
+                                                        <>
+
+                                                            {
+                                                                i === 4 &&
+                                                                <>
+                                                                    <MainAd />
+                                                                </>
+                                                            }
+                                                        
+                                                            <Post
+                                                                enableImage={i === 0 ? true : false}
+                                                                postImage={post.cover_image}
+                                                                user={{
+                                                                    name: post.user ? post.user.name : '',
+                                                                    avatar: post.user ? post.user.profile_image : ''
+                                                                }}
+                                                                createdAt={post.readable_publish_date}
+                                                                title={`${post.title}`}
+                                                                titleSize={i === 0 ? '30' : '25'}
+                                                                tags={post.tag_list.length > 0 ? post.tag_list : []}
+                                                                comments={post.comments_count}
+                                                                likes={post.public_reactions_count}
+                                                                read={post.reading_time_minutes}
+                                                                url={post.canonical_url}
+                                                            />
+                                                        
+                                                        </>
+                                                    
+                                                    )
+                                                }
+                                            
+                                            </>
+                                        }
+
+                                    </div>
+                                </TabPanel>
+
+                                <TabPanel tabId="two">
+                                    <div className='post-box'>
+
+                                        {
+                                            postContext.loading &&
+                                            <>
+                                                <div className='ui-text-center'>
+                                                    <span className='loader md'></span>
+                                                </div>
+                                            </>
+                                        }
+
+                                        {
+                                            !postContext.loading && postContext.rising.length <= 0 &&
+                                            <>
+                                                <div className='ui-text-center'>
+                                                    <span className='fs-17 onblack'>There are no posts available.</span>
+                                                </div>
+                                            </>
+                                        }
+
+                                        {
+                                            !postContext.loading && postContext.rising.length > 0 &&
+                                            <>
+                                            
+                                                {
+                                                    postContext.rising.map((post, i) => 
+                                                    
+                                                        <>
+
+                                                            {
+                                                                i === 4 &&
+                                                                <>
+                                                                    <MainAd />
+                                                                </>
+                                                            }
+                                                        
+                                                            <Post
+                                                                enableImage={i === 0 ? true : false}
+                                                                postImage={post.cover_image}
+                                                                user={{
+                                                                    name: post.user ? post.user.name : '',
+                                                                    avatar: post.user ? post.user.profile_image : ''
+                                                                }}
+                                                                createdAt={post.readable_publish_date}
+                                                                title={`${post.title}`}
+                                                                titleSize={i === 0 ? '30' : '25'}
+                                                                tags={post.tag_list.length > 0 ? post.tag_list : []}
+                                                                comments={post.comments_count}
+                                                                likes={post.public_reactions_count}
+                                                                read={post.reading_time_minutes}
+                                                                url={post.canonical_url}
+                                                            />
+                                                        
+                                                        </>
+                                                    
+                                                    )
+                                                }
+                                            
+                                            </>
+                                        }
+
+                                    </div>
+                                </TabPanel>
+
+                                <TabPanel tabId="three">
+                                    <div className='post-box'>
+
+                                        {
+                                            postContext.loading &&
+                                            <>
+                                                <div className='ui-text-center'>
+                                                    <span className='loader md'></span>
+                                                </div>
+                                            </>
+                                        }
+
+                                        {
+                                            !postContext.loading && postContext.tops.length <= 0 &&
+                                            <>
+                                                <div className='ui-text-center'>
+                                                    <span className='fs-17 onblack'>There are no posts available.</span>
+                                                </div>
+                                            </>
+                                        }
+
+                                        {
+                                            !postContext.loading && postContext.tops.length > 0 &&
+                                            <>
+                                            
+                                                {
+                                                    postContext.tops.map((post, i) => 
                                                     
                                                         <>
 

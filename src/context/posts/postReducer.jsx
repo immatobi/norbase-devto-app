@@ -1,6 +1,7 @@
 import {
     GET_POSTS,
-    GET_TAGGED_POSTS,
+    GET_TOP_POSTS,
+    GET_RISING_POSTS,
     GET_POST,
     SET_LOADING
 } from  '../types'
@@ -16,10 +17,16 @@ export default (state, action) => {
                 posts: action.payload,
                 loading: false
             }
-            case GET_TAGGED_POSTS: 
+            case GET_TOP_POSTS: 
             return {
                 ...state,
-                tags: action.payload,
+                tops: action.payload,
+                loading: false
+            }
+            case GET_RISING_POSTS: 
+            return {
+                ...state,
+                rising: action.payload,
                 loading: false
             }
         case GET_POST: 

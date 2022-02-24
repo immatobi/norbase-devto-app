@@ -46,32 +46,32 @@ const DevAd = () => {
                         <a href='' target="_blank" className='fs-16 brand-purple ml-auto'>See all</a>
                     </div>
 
-                    <a href='' className='bright link-bd text-muted fs-16'>
+                    <a href='https://dev.to/listings/education' target="_blank" className='bright link-bd text-muted fs-16'>
                         <div className='fs-16 mb-1'>Build a modern Ruby on Rails application, step-by-step</div>
                         <div className='fs-14' style={{color: '#999fab'}}>education</div>
                     </a>
 
-                    <a href='' className='bright link-bd text-muted fs-16'>
+                    <a href='https://dev.to/listings/forhire/problem-solution-seasoned-developer-available-for-contract-work-1k0' target="_blank"  className='bright link-bd text-muted fs-16'>
                         <div className='fs-16 mb-1'>Problem/Solution: Seasoned Developer Available for Contract Work</div>
                         <div className='fs-14' style={{color: '#999fab'}}>forhire</div>
                     </a>
 
-                    <a href='' className='bright link-bd text-muted fs-16'>
+                    <a href='https://dev.to/listings/education/intro-to-xml-json-and-yaml-3h' target="_blank" className='bright link-bd text-muted fs-16'>
                         <div className='fs-16 mb-1'>Intro to XML, JSON, and YAML</div>
                         <div className='fs-14' style={{color: '#999fab'}}>education</div>
                     </a>
 
-                    <a href='' className='bright link-bd text-muted fs-16'>
+                    <a href='https://dev.to/listings/misc/last-chance-to-participate-in-the-state-of-frontend-2022-global-survey-1i73' target="_blank"  className='bright link-bd text-muted fs-16'>
                         <div className='fs-16 mb-1'>Last chance to participate in the State of Frontend 2022 global survey 🌍</div>
                         <div className='fs-14' style={{color: '#999fab'}}>misc</div>
                     </a>
 
-                    <a href='' className='bright link-bd text-muted fs-16'>
+                    <a href='https://dev.to/listings/products/coscreen-a-remote-pair-programming-and-collaboration-tool-which-makes-working-together-40-faster-2lp1' target="_blank"  className='bright link-bd text-muted fs-16'>
                         <div className='fs-16 mb-1'>CoScreen  : A remote pair programming and collaboration tool which makes working together 40% faster</div>
                         <div className='fs-14' style={{color: '#999fab'}}>products</div>
                     </a>
 
-                    <a href='' className='onblack listing-btn fs-14'>Create a Listing</a>
+                    <a href='https://dev.to/enter' className='onblack listing-btn fs-14'>Create a Listing</a>
                     
                     
                 </div>
@@ -87,7 +87,7 @@ const DevAd = () => {
                         {/* <a href='' target="_blank" className='fs-16 brand-purple ml-auto'>See all</a> */}
                     </div>
 
-                    <a href='' className='bright link-bd text-muted fs-16'>
+                    <a href='https://dev.to/selly/help-flutter-dropdown-54cc' target="_blank" className='bright link-bd text-muted fs-16'>
                         <div className='fs-16 mb-1'>[Help] Flutter Dropdown</div>
                         <span className='fs-13 dev-badge'>New</span>
                     </a>
@@ -106,27 +106,27 @@ const DevAd = () => {
                         {/* <a href='' target="_blank" className='fs-16 brand-purple ml-auto'>See all</a> */}
                     </div>
 
-                    <a href='' className='bright link-bd text-muted fs-16'>
+                    <a href='https://dev.to/swimm_io/whats-one-piece-of-advice-every-dev-should-ignore-11h6' target="_blank" className='bright link-bd text-muted fs-16'>
                         <div className='fs-16 mb-1'>What's one piece of advice every dev should ignore? 🚩🚩🚩 </div>
                         <div className='fs-14' style={{color: '#999fab'}}>16 comments</div>
                     </a>
 
-                    <a href='' className='bright link-bd text-muted fs-16'>
+                    <a href='https://dev.to/devteam/listen-to-the-s8e3-of-devdiscuss-the-importance-of-video-game-archival-preservation-and-curation-1dce' target="_blank"  className='bright link-bd text-muted fs-16'>
                         <div className='fs-16 mb-1'>Listen to the S8E3 of DevDiscuss: "The Importance of Video Game Archival, Preservation, and Curation"</div>
                         <span className='fs-13 dev-badge'>New</span>
                     </a>
 
-                    <a href='' className='bright link-bd text-muted fs-16'>
+                    <a href='https://dev.to/nikola/five-year-club-at-devto-9oi' target="_blank"  className='bright link-bd text-muted fs-16'>
                         <div className='fs-16 mb-1'>Five Year Club at dev.to</div>
                         <div className='fs-14' style={{color: '#999fab'}}>5 comments</div>
                     </a>
 
-                    <a href='' className='bright link-bd text-muted fs-16'>
+                    <a href='https://dev.to/tiotech/oracle-fusion-financials-online-training-1cic' target="_blank"  className='bright link-bd text-muted fs-16'>
                         <div className='fs-16 mb-1'>Oracle Fusion Financials Online Training</div>
                         <span className='fs-13 dev-badge'>New</span>
                     </a>
 
-                    <a href='' className='bright link-bd text-muted fs-16'>
+                    <a href='https://dev.to/coredna/the-rise-of-the-unicorns-aka-full-stack-developers-36b4' target="_blank"  className='bright link-bd text-muted fs-16'>
                         <div className='fs-16 mb-1'>The Rise of The Unicorns AKA “Full-Stack Developers”</div>
                         <span className='fs-13 dev-badge'>New</span>
                     </a>
