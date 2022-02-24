@@ -153,7 +153,7 @@ const Home = (props) => {
                                                                 comments={post.comments_count}
                                                                 likes={post.public_reactions_count}
                                                                 read={post.reading_time_minutes}
-                                                                url={post.canonical_url}
+                                                                url={post.url}
                                                             />
                                                         
                                                         </>
@@ -218,7 +218,7 @@ const Home = (props) => {
                                                                 comments={post.comments_count}
                                                                 likes={post.public_reactions_count}
                                                                 read={post.reading_time_minutes}
-                                                                url={post.canonical_url}
+                                                                url={post.url}
                                                             />
                                                         
                                                         </>
@@ -283,7 +283,7 @@ const Home = (props) => {
                                                                 comments={post.comments_count}
                                                                 likes={post.public_reactions_count}
                                                                 read={post.reading_time_minutes}
-                                                                url={post.canonical_url}
+                                                                url={post.url}
                                                             />
                                                         
                                                         </>
