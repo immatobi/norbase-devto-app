@@ -13,8 +13,8 @@ const Post = ({ title, titleSize, postImage, user, createdAt, tags, comments, li
 
                 {
                     enableImage && enableImage === true &&
-                    <Link to="" className='ui-full-bg-norm post-img' style={{ backgroundImage: `url("${postImage}")` }}>
-                    </Link>
+                    <a target="_blank" href={url} className='ui-full-bg-norm post-img' style={{ backgroundImage: `url("${postImage}")` }}>
+                    </a>
                 }
                 
                 <div className='post-content-details'>
